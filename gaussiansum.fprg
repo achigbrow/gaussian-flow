@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Mike PC"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-05-21 09:11:33 AM"/>
+        <attribute name="saved" value="2019-05-21 09:22:21 AM"/>
         <attribute name="created" value="TWlrZSBQQztMQVBUT1AtR1JPT1NQVFY7MjAxOS0wNS0yMTswODoxNjoxNSBBTTsyOTky"/>
-        <attribute name="edited" value="TWlrZSBQQztMQVBUT1AtR1JPT1NQVFY7MjAxOS0wNS0yMTswOToxMTozMyBBTTsyOzMwOTc="/>
+        <attribute name="edited" value="TWlrZSBQQztMQVBUT1AtR1JPT1NQVFY7MjAxOS0wNS0yMTswOToyMjoyMSBBTTs0OzMwOTg="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -18,11 +18,7 @@
                 <output expression="&quot;Please enter a number that is between 1 and 1000000.&quot;" newline="True"/>
                 <input variable="upperLimit"/>
             </while>
-            <assign variable="sum" expression="0"/>
-            <declare name="i" type="Integer" array="False" size=""/>
-            <for variable="i" start="1" end="upperLimit" direction="inc" step="1">
-                <assign variable="sum" expression="sum + i"/>
-            </for>
+            <assign variable="sum" expression="(upperLimit * (upperLimit +1))/2"/>
             <output expression="&quot;The gaussian sum of &quot; &amp; upperLimit &amp; &quot; is &quot; &amp; sum" newline="True"/>
         </body>
     </function>
