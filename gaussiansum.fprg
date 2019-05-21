@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mike PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-21 09:11:33 AM"/>
+        <attribute name="created" value="TWlrZSBQQztMQVBUT1AtR1JPT1NQVFY7MjAxOS0wNS0yMTswODoxNjoxNSBBTTsyOTky"/>
+        <attribute name="edited" value="TWlrZSBQQztMQVBUT1AtR1JPT1NQVFY7MjAxOS0wNS0yMTswOToxMTozMyBBTTsyOzMwOTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="upperLimit" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <assign variable="upperLimit" expression="-1"/>
+            <while expression="upperLimit &lt; 1 || upperLimit &gt; 1000000">
+                <output expression="&quot;Please enter a number that is between 1 and 1000000.&quot;" newline="True"/>
+                <input variable="upperLimit"/>
+            </while>
+            <assign variable="sum" expression="0"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="upperLimit" direction="inc" step="1">
+                <assign variable="sum" expression="sum + i"/>
+            </for>
+            <output expression="&quot;The gaussian sum of &quot; &amp; upperLimit &amp; &quot; is &quot; &amp; sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
